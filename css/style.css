@@ -7,9 +7,7 @@
     box-sizing: border-box;
     
 }
-html{
-    scroll-behavior: smooth;
-}
+
 body{
     overflow-x: hidden;
 }
@@ -93,7 +91,7 @@ body{
     max-width: 50%;
     margin: auto;
     font-size: 15px;
-    height: 60%;
+    
 
 }
 .box-main1{
@@ -140,6 +138,8 @@ marquee{
     font-family: 'Staatliches';
 font-size: 46px;
 text-align: center;
+padding: 27px;
+    margin-top: 28px;
 }
 .bigtext1{
     font-family: 'Staatliches';

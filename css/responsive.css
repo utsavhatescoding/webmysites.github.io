@@ -1,15 +1,7 @@
   /* Responsive : Using Media Query */
 
                        @media only screen and (max-width:1000px){
-    
-   
-
-                        .rightNav{
-                            
-                            text-align: center;
-                           
-                        }
-                        .navbar-links{
+                         .navbar-links{
                             display: none;
                             width: 100%;
                         }
@@ -33,18 +25,13 @@
                        }
                        .box-main{
                            flex-direction: column-reverse;
-                           max-width: 100%;
+                           
                        }
-                    #search{
-                        width: 100%;
-                    }
+                   
                     .burger{
                         display: flex;
                     }
-                        .height-nav{
-                            height: 50px;
-                    
-                        }
+                        
                        
                         
                         .smalltext{
@@ -61,9 +48,7 @@
                             max-width: 50%;
                             margin:  0px auto;
                         }
-                        body{
-                            overflow-x: hidden;
-                        }
+                       
                         
                         .cr7{
                             height: 150px;
@@ -76,10 +61,12 @@
                             flex-direction: row;
                             justify-content: center;
                         }
-                        body{
-                            overflow: hidden;
-                        }
+                       
                         .rightNav{
+                            display: none;
+                        }
+                       
+                        .img1{
                             display: none;
                         }
                         body{
