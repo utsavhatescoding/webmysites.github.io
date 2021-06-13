@@ -7,20 +7,22 @@
 .navbar{
     display: flex;
     align-items: center;
-    padding: 20px;
-    
+    padding: 20px;  
 }
 nav{
     flex: 1;
     text-align: right;
+    
 }
 nav ul{
     display: inline-block;
     list-style-type: none;
+    
 }
 nav ul li{
     display: inline-block;
     margin-right: 20px;
+    
 }
 a{
     text-decoration: none;
@@ -28,6 +30,7 @@ a{
    
     
 }
+
 .container{
     max-width: 1300px;
     margin: auto;
@@ -66,7 +69,10 @@ a{
     transition: background 0.5s;
 }
 .header{
-    background: radial-gradient(white,blanchedalmond)
+    background: radial-gradient(white,blanchedalmond);
+    
+    
+    
 }
 .btn:hover{
     background: brown;
@@ -88,6 +94,7 @@ align-items: center;
     margin: auto;
     padding-left: 3px;
     padding-right: 3px;
+   
     
     
     
@@ -99,6 +106,7 @@ align-items: center;
     margin: auto;
     padding-left: 3px;
     padding-right: 3px;
+    
     
 
     
@@ -292,6 +300,7 @@ background: rgb(0, 0, 0);
 width: 100%;
 overflow: hidden;
 transition: max-height 0.5s;
+opacity: 0.5;
 }
 nav ul li{
     display: block;
@@ -313,20 +322,181 @@ nav ul li a{
 }
 /* ------------------FOR  MOBILE DEVICES --------------- */
 
-@media only screen and (max-width:500px){
+@media only screen and (max-width:600px){
     .row{
         text-align: center;
     }
     .col-2,.col-3,.col-4{
         flex-basis: 100%;
     }
+    .single-product .row{
+        text-align: left;
+    }
+    .single-product .col-2{
+        padding: 20px 0;
+    }
+    .single-product h1{
+        font-size: 40px;
+        line-height: 32px;
 
-
-}
-
-@media only screen and (min-width:1100px) and (max-width:2500px){
+    }
+    .single-product .row h2{
+        margin-left: 30px;
+        
+    }
     
+
+
 }
+
+/* ---------------All Products Page ---------------- */
+.row-2{
+    justify-content: space-between;
+    margin: 100px auto 50px;
+}
+select{
+    border: 1px solid rgb(0, 0, 0);
+    padding: 6px;
+    border-radius: 1px;
+}
+select:focus{
+    outline: none;
+}
+.page-btn{
+    margin: 0 auto 80px;
+}
+.page-btn span{
+    display: inline-block;
+    border: 1px solid crimson;
+    margin-left: 10px;
+    width: 40px;
+    height: 40px;
+    text-align: center;
+    line-height: 40px;
+    cursor: pointer;
+}
+.page-btn span:hover{
+    background: chocolate;
+    color: white;
+}
+
+/* ----------------------Details Design----------------- */
+.single-product{
+    margin-top: 80px;
+
+}
+.single-product .col-2 img{
+    padding: 0;
+}
+.single-product .col-2{
+    padding: 20px;
+}
+.single-product h4{
+    margin: 20px 0;
+    font-size: 22px;
+    font-weight: bold;
+}
+.single-product select{
+    display: block;
+    padding: 10px;
+    margin-top: 20px;
+}
+.single-product input{
+    width: 50px;
+    height: 40px;
+    padding-left: 20px;
+    font-size: 18px;
+    margin-right: 20px;
+    border: 1px solid rgb(255, 94, 0);
+}
+input:focus{
+    outline: none;
+}
+.single-product .fa{
+    
+    margin-left: 7px;
+}
+.small-img-row{
+    display: flex;
+    justify-content: space-between;
+}
+.small-img-col{
+    flex-basis: 24%;
+    cursor: pointer;
+}
+
+/* -------------------------------ACCOUNT PAGE DESIGN------------------------- */
+.account-page{
+    padding: 50px 0;
+    background: radial-gradient(white,burlywood);
+}
+.form-container{
+    background: rgb(246, 246, 246);
+    width: 300px;
+    height: 400px;
+    position: relative;
+    text-align: center;
+    padding: 20px 0;
+    margin: auto;
+    box-shadow: 0 0 20px 0px;
+    overflow: hidden;
+}
+.form-container span{
+    font-weight: bold;
+    padding: 0 10px;
+    color: gray;
+    cursor: pointer;
+    width: 100px;
+    display: inline-block;
+}
+.form-btn{
+    display: inline-block;
+}
+.form-container form{
+    max-width: 300px;
+    padding: 0 20px;
+    position: absolute;
+    top: 130px;
+    transition: transform 1s;
+}
+form input{
+    width: 100%;
+    height: 30px;
+    margin: 10px 0;
+    padding: 0 10px;
+    border: 1px solid #ccc;
+}
+form .btn{
+    width: 100%;
+    border: none;
+    cursor: pointer;
+    margin: 10px 0;
+}
+form .btn:focus{
+    outline: none;
+}
+#LoginForm{
+    left: -300px;
+
+}
+#RegisterForm{
+    left: 0px;
+}
+form a{
+    font-size: 12px;
+}
+#Indicator{
+    width: 100px;
+    border: none;
+    background: coral;
+    height: 3px;
+    margin-top: 8px;
+    transform: translateX(100px);
+    transition: transform 1s;
+}
+
+
+
 
 
 
