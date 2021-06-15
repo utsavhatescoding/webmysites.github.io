@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    
+    <title> My Analog Clock UI Dark Design</title>
+</head>
+
+<body >
+
+    <div class="image" onclick="toggleTheme()">
+        <a href="#"> <h2>Change Theme</h2><img src="bar.jpg" alt="bar" class="barimg" onclick="barRotate()"></a>
+    </div>
+    <div class="clock">
+        <div class="hour">
+            <div class="hr" id="hr">
+            </div>
+
+            </div>
+            <div class="min">
+                <div class="mn" id="mn">
+
+                </div>
+            </div>
+            <div class="sec">
+                <div class="sc" id="sc"></div>
+            </div>
+        
+    </div>
+   <script type="text/javascript">
+
+const deg=6;
+const hr=document.getElementById('hr');
+const mn=document.getElementById('mn');
+const sc=document.getElementById('sc');
+
+const bodyCLock=document.querySelector('body');
+const BarImg=document.querySelector('.barimg');
+
+
+
+
+setInterval(()=> {
+
+let day=new Date();
+let hh=day.getHours() *30;
+let mm=day.getMinutes()*deg;
+let ss=day.getSeconds()*deg;
+
+
+hr.style.transform=`rotateZ(${(hh)+(mm/12)}deg)`;
+mn.style.transform=`rotateZ(${mm}deg)`;
+sc.style.transform=`rotateZ(${ss}deg)`;
+
+});
+
+
+function toggleTheme(){
+    bodyCLock.classList.toggle('light');
+
+}
+
+function barRotate(){
+    BarImg.classList.toggle('rotate');
+}
+</script>
+
+</body>
+
+</html>
