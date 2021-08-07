@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>This is my contact page</title>
+
+link(rel="stylesheet", href="../static/style1.css")
+
+</head>
+<body>
+
+    <nav>
+        <ul><li><a href="/">Home  </a></li> <li><a href="/">Contact</a></li>  <li><a href="/"> Futebol</a></li>
+        </ul>
+    </nav>
+    <!-- <h1>#{title}</h1> -->
+    <!-- <p>  #{content}</p>  -->
+<h1>  Fill this form Now !!</h1>
+<p> Get the Futbol Membership at 50$ </p>
+<form  action="/contact" method="POST" id="contact">
+<input type="text" name="name" id="name" placeholder="Enter your name">
+<input type="number" name="age" id="age" placeholder="Enter your age">
+<input type="number" name="number" id="number" placeholder="Enter your number">
+<input type="email" name="email" id="email" placeholder="Enter your Email ID">
+<textarea name="address" type="text" id="address" cols="30" rows="10" placeholder="Exact Address"></textarea>
+<textarea name="more" type="text" id="more" cols="30" rows="10" placeholder="More about you"></textarea>
+<button class="btn">Submit Now</button>
+</form>
+</body>
+</html>

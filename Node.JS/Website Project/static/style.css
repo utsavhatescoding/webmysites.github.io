@@ -1,0 +1,152 @@
+/* *{
+    margin: 0%;
+    padding: 0%;
+    box-sizing: border-box;
+} */
+
+#navbar ul{
+    display: flex;
+    flex-direction: row;
+    
+    justify-content: center;
+   
+    background-color: cornsilk; padding: 23px 10px;
+}
+
+#navbar li{
+    list-style: none;
+}
+#navbar li a {
+    text-decoration: underline;
+    padding: 7px 8px ;
+    border: 2px solid black;
+    margin: 9px ;
+    background-color: blanchedalmond;
+    border-radius: 7px;
+    font-family: 'Odibee Sans', cursive;
+    font-size: 1.2rem;
+
+}
+#navbar li a:hover{
+    text-decoration: lime;
+    border-radius: 0%;
+    border: 2px solid gold;
+    background-color: lightblue;
+
+}
+
+
+#introsection{
+height: 300px;
+font-family: 'Odibee Sans', cursive;
+background-color: blanchedalmond;
+color: rgb(0, 0, 0);
+display: flex;
+justify-content: center;
+align-items: center;
+font-size: 2rem;
+
+flex-direction: column;
+}
+#contentsection{
+  background-color: wheat;
+    display: flex;
+    
+    height: 400px;
+    font-family: 'Odibee Sans', cursive;
+font-size: 1.4rem;
+justify-content: center;
+align-items: center;
+
+color: rgb(0, 0, 0);
+
+}
+#footer{
+    height: 30px;
+    display: flex;
+    background-color: rgb(0, 0, 0);
+    font-family: 'Odibee Sans', cursive;
+    color: yellow;
+    justify-content: center;
+    align-content: center;
+    align-items: center;
+}
+#navbar{
+    width: 100%;
+}
+#mission h2{
+    display: flex;
+    justify-content: center;
+}
+#mission{
+    height: 400px;
+    display: inline-block;
+    background-color: burlywood;
+    font-family: 'Odibee Sans', cursive;
+    color: rgb(0, 0, 0);
+    justify-content: center;
+    align-content: center;
+    align-items: center;
+    margin: auto;
+    width: 100%;
+    
+}
+.card1{
+    display:inline-block;
+    margin: auto;
+    border: 2px solid rgb(0, 0, 0);
+    border-radius: 10px;
+    width: 30%;
+    margin: 23px 20px;
+    height: 200px;
+    font-family: 'Odibee Sans', cursive;
+    background-color: blanchedalmond;
+    justify-content: center;
+    align-items: center;
+}
+.card2{
+    display:inline-block;
+    margin: auto;
+    border: 2px solid rgb(0, 0, 0);
+    border-radius: 10px;
+    width: 30%;
+    margin: 23px 20px;
+    height: 200px;
+    font-family: 'Odibee Sans', cursive;
+    background-color:indianred;
+}
+.card3{
+    display:inline-block;
+    margin: auto;
+    border: 2px solid rgb(0, 0, 0);
+    border-radius: 10px;
+    width: 30%;
+    margin: 23px 20px;
+    height: 200px;
+    font-family: 'Odibee Sans', cursive;
+    background-color: darkkhaki;
+}
+.card:hover{
+   background-color: chocolate;
+   border: 2px solid black;
+   border-radius: 0%;
+}
+#mission h2{
+    
+   text-align: center;
+   font-family: 'Odibee Sans', cursive;
+   
+}
+.card h3{
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    font-family: sans-serif;
+    margin: 10px;
+    font-family: 'Odibee Sans', cursive;
+}
+
+.missionheader{
+    justify-content: center;
+    align-items: center;
+}

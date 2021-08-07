@@ -1,0 +1,117 @@
+*{
+    box-sizing: border-box;
+}
+body{
+    margin: 0;
+    padding: 0;
+}
+.navbar{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: bisque;
+    color: rgb(0, 0, 0);
+    height: 70px;
+    
+}
+.title{
+    font-size: 1.5rem;
+    margin: 10px 10px;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+.navlink{
+    display: flex;
+    transition: 2s;
+}
+.navlink ul{
+    margin: 0;
+    padding: 0;
+    display: flex;
+    
+}
+.navlink li{
+    list-style: none;
+}
+.navlink li a{
+    text-decoration: underline;
+    color: rgb(0, 0, 0);
+    padding: 20px;
+    display: flex;
+    background-color: bisque;
+    justify-content: center;
+    
+    
+}
+.navlink li a:hover{
+    background-color: gray;
+}
+.toggle-button{
+    position: absolute;
+    top: 1.5rem;
+    right: 1rem;
+    display: none;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 30px;
+    height: 22px;
+    transition: all 2s ;
+}
+.bar{
+    height: 3px;
+    width: 100%;
+    border-radius: 10px;
+    background-color: rgb(0, 0, 0);
+}
+
+
+/* --------------------------------------------------------------- */
+@media (max-width:800px){
+
+    .toggle-button{
+        display: flex;
+        transition:2s;
+    }
+    .navlink{
+       display: flex;
+        transition: all 2s;
+        transform: translateY(-250px);
+        width: 100%;
+       
+    }
+    .navbar{
+        flex-direction: column;
+    align-items: flex-start;
+    }
+    .navlink ul{
+        flex-direction: column;
+        width: 100%;
+       
+    }
+    .navlink li{
+        text-align: center;
+        display: block;
+    }
+    .navlink li a{
+        padding: .5rem 1rem;
+        
+    }
+     
+    .navlink.active  {
+        display: flex;
+        transition: all 2s;
+        transform: translateY(15px);
+        width: 100%;
+    }
+    
+    .toggle-button.rotate{
+        transform: rotate(360deg);
+    }
+    .title{
+        display: flex;
+        font-size: 22px;
+        margin-top:20px;
+        font-style: italic;
+
+    }
+
+}

@@ -1,0 +1,52 @@
+@import url('https://fonts.googleapis.com/css2?family=Mate+SC&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inconsolata:wght@300&family=Mate+SC&display=swap');
+
+/* DEFINING CSS VARIABLES : */
+:root{
+    --main-bg-color:burlywood;
+    --font1: 'Inconsolata', monospace;
+    --font2:'Mate SC', serif;
+}
+.font1{
+font-family:'Inconsolata', monospace; ;
+}
+.font2{
+font-family: 'Mate SC', serif;
+}
+
+.max-width-1{
+    max-width: 80vw;
+}
+
+.max-width-2{
+    max-width: 60vw;
+}
+.m-auto{
+    margin: auto;
+}
+.margins{
+    margin-top: 1px;
+    margin-bottom: 12px;
+}
+.btn{
+    padding: 5px 10px;
+    border: 2px solid black;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: all 0.2s ease-in;
+}
+.btn:hover{
+    background-color: gray;
+    color: rgb(255, 255, 255);
+}
+.formbox input, textarea{
+    width: 45vw;
+    padding: 10px 6px;
+    margin: 8px 0 ;
+    font-family: -apple-system,sans-serif;
+    border: 2px solid black;
+    border-radius: 5px;
+    
+}
+
+
