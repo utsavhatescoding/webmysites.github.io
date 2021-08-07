@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Events and Listneing to Events </title>
+</head>
+<style>
+    #btn{
+        padding: 10px;
+        color: rgb(0, 0, 0);
+        border: 2px solid black;
+        font-family: cursive;
+        background-color: blueviolet;
+        cursor: pointer;
+    }
+</style>
+<body>
+  
+
+    
+    Browser Events
+    <hr>
+
+    click
+    contextmenu
+  mouseover/mouseout
+   mousedown/mouseup
+   mousemove
+   submit
+   focus
+   DOMContent Loaded 
+   transitionend
+
+
+   <div class="container">
+       <h1>
+           This is my heading
+       </h1>
+       <p id="para">
+           Lorem ipsum dolor sit amet, consectetur adipisicing elit. Vel pariatur perferendis reprehenderit architecto rem delectus aperiam sit quod alias, praesentium saepe totam error debitis eum sapiente? Nulla quia iste voluptatibus aperiam obcaecati blanditiis expedita. Consectetur placeat excepturi soluta? Ipsum facere aut non enim voluptatum aspernatur, placeat in veritatis deserunt. Nisi magnam asperiores error atque nobis perferendis nam fugit quibusdam. Vero!
+
+       </p>
+   </div>
+
+   <button id="btn" onclick="hide()">
+       Show/Hide
+   </button>
+   <script>
+
+let para=document.getElementById('para');
+para.addEventListener('mouseover',function run(){
+    console.log('Mouse Inside ALert ')
+});
+
+para.addEventListener('mouseout',function run(){
+    console.log('Mouse Outside ALert ')
+});
+
+
+
+       function hide(){
+          let btn=document.getElementById('btn');
+           let para=document.getElementById('para');
+           if (para.style.display != 'none'){
+               para.style.display='none'
+           }
+           else{
+            para.style.display='block';
+           }
+           
+       }
+   </script>
+</body>
+</html>

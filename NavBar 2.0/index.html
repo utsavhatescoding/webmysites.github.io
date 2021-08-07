@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Responsive Navbar 2.0</title>
+    <style>
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+       
+
+        .navbar {
+            display: flex;
+            align-items: center;
+            height: 75px;
+            
+            
+           padding: 20px;
+            
+            
+        }
+
+        nav {
+            flex: 1;
+            text-align: right;
+        }
+
+        nav ul {
+
+            list-style: none;
+            display: inline-block;
+        }
+
+        nav ul li {
+            margin-right: 10px;
+            display: inline-block;
+            font-family: monospace;
+           text-decoration: overline;
+           font-size: 14px;
+            padding: 10px;
+        }
+        .container{
+            padding-left: 10px;
+            padding-right: 10px;
+        }
+        .menuicon{
+            width: 28px;
+            margin-left: 10px;
+            
+            display: none;
+        }
+      
+/* ----------------------------------------------------------------------------------- */
+        @media only screen and (max-width:800px) {
+
+            nav ul{
+                position: absolute;
+                top: 70px;
+                left: 0%;
+                width: 100%;
+                background: burlywood;
+                color: black;
+                overflow: hidden;
+                transition:  3s;  
+                
+            }
+            nav ul li{
+                display: block;
+                margin-right: 50px;
+                margin-top: 10px;
+                margin-bottom: 10px;
+            }
+            nav ul li a{
+                color: white; 
+            }
+            .menuicon{
+                display: inline-block;
+                cursor: pointer; 
+                transition: 2s;  
+            }  
+            .menuicon.open{
+    transform: rotate(360deg);
+}
+
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+    <div class="navbar">
+        <div class="logo">
+            <img src="logo_transparent.png" alt="logo" srcset="" width="125px">
+        </div>
+        <nav>
+
+            <ul id="navitems">
+                <li>HOME</li>
+                <li>ABOUT</li>
+                <li>CONTACT</li>
+                <li>SOLTI</li>
+                <li>SOLTIDON</li>
+            </ul>
+        </nav>
+        
+            <img src="menu.png" alt="sandwich" class="menuicon" width="30px" height="30px" onclick="toggle()">
+        
+    </div>
+</div>
+<script>
+    var Navitems=document.getElementById("navitems");
+    var MenuIcon=document.getElementsByClassName("menuicon")[0];
+    
+    Navitems.style.maxHeight="0px"
+
+    function toggle(){
+        MenuIcon.classList.add('open');
+        
+        if  (Navitems.style.maxHeight =="0px"){
+            Navitems.style.maxHeight="300px";
+            
+        }
+        else{
+            MenuIcon.classList.remove('open');
+           
+            
+            Navitems.style.maxHeight="0px";
+        }
+    }
+</script>
+</body>
+</html>

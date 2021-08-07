@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Working with Json</title>
+</head>
+<body>
+    <script type="text/javascript">
+ let data = 
+ `[
+     
+        {
+            "location": "Brazil",
+            "country_code": "br",
+            "latitude": -14.235004,
+            "longitude": -51.92528,
+            "confirmed": 16625572,
+            "dead": 465312,
+            "recovered": 15068146,
+            "updated": "2021-06-02 06:45:06.968402+00:00"
+        },
+        {
+            "location": "South Africa",
+            "country_code": "za",
+            "latitude": -30.559482,
+            "longitude": 22.937506,
+            "confirmed": 1669231,
+            "dead": 103,
+            "recovered": 1486873,
+            "updated": "2021-06-02 06:51:27.785085+00:00"
+        }
+    ]`
+ 
+    console.log(JSON.parse(data)[0].location);
+    </script>
+</body>
+</html>
