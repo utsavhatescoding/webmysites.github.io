@@ -1,0 +1,79 @@
+@import url('https://fonts.googleapis.com/css2?family=Sigmar+One&display=swap')
+
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    background: url(bg.jpg) no-repeat center center fixed;
+    background-size: cover;
+
+}
+
+.container{
+    
+    color: white;
+    position: absolute;
+    top: 35%;
+    left: 60%;
+
+}
+.container h1{
+    display: inline-block;
+    font-size: 30px;
+    border-bottom: 5px solid plum;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    
+    margin-bottom: 10px;
+    padding: 0px 13px;
+
+
+}
+.box{
+    width: 100%;
+    
+   
+
+}
+.box input{
+    width: 65%;
+    border: none;
+    outline: none;
+    color: white;
+    margin: 10px 1px;
+    padding: 5px 10px ;
+    align-items: center;
+    justify-content: center;
+    border-radius: 3px;
+    box-shadow: peru;
+    opacity: 0.9;
+    font-family:  cursive;
+
+}
+.btn{
+    cursor: pointer;
+    outline: none;
+    width: 20%;
+    margin: 12px 0px;
+    padding: 5px;
+    border-radius: 7px;
+    border: 2px solid plum;
+}
+.btn{
+    position: absolute;
+    align-items: center;
+    justify-content: center;
+
+    
+}
+.btn:hover{
+    background-color: red;
+    border:2px solid whitesmoke;
+    opacity: 0.5;
+
+}
+.box input:hover{
+    background-color: papayawhip;
+
+
+}

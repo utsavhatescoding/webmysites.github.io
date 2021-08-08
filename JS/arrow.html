@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Arrow Functions in Java Script</title>
+</head>
+
+<body>
+    <div class="container">
+        This is a Arrow Functions
+
+    </div>
+    <script>
+        function greet() {
+            console.log('Good Mrng');
+        }
+        greet();
+
+        // Arrow Function : 
+        let greet1 = () => console.log('Good Afternoon from Arrow Function Inside ');
+        greet1();
+        let myobject = {
+            greeting: "Hey There ",
+            names:["Solti", "Utsav"] ,
+             speak(){
+                this.names.forEach((student) => {
+                    console.log(this.greeting + " k cha " + student );
+                })
+            }
+
+        }
+        myobject.speak();
+    </script>
+</body>
+
+</html>
